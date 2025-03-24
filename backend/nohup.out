@@ -1,0 +1,21 @@
+2024/12/25 16:00:37 Database connected!
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /api/startups             --> main.GetStartups (4 handlers)
+[GIN-debug] GET    /api/startups/:id         --> main.GetStartupByID (4 handlers)
+[GIN-debug] POST   /api/register             --> main.register (4 handlers)
+[GIN-debug] POST   /api/login                --> main.login (4 handlers)
+[GIN-debug] GET    /user/startups            --> main.GetStartups (5 handlers)
+[GIN-debug] GET    /admin/startups           --> main.GetStartups (5 handlers)
+[GIN-debug] POST   /admin/startups           --> main.upsertStartup (5 handlers)
+[GIN-debug] PUT    /admin/startups/:id       --> main.upsertStartup (5 handlers)
+[GIN-debug] DELETE /admin/startups/:id       --> main.deleteStartup (5 handlers)
+[GIN-debug] POST   /admin/startups/import    --> main.importStartups (5 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN-debug] [ERROR] listen tcp :8080: bind: address already in use
